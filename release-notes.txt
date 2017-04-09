@@ -1,0 +1,31 @@
+********************************
+*** 2G KPI Integration Tool  ***
+********************************
+
+Version: V6R2 (Current)
+-----------------------
+* Ericsson Data processing withheld as Ericsson is not on air
+
+Version: V6R1
+-------------
+* Minor bug fixes
+* Major change in third degree data serach, now CELL level data is accessible
+* Major change in second degree data serch, now whole network data by date range is accessible
+* Fixed user permission for modarate users
+
+Version: V5R3
+-------------
+* Minor bug fixes
+* Changes in menu
+* Added user permissions and fixed access issues
+
+Version: V5R2
+-------------
+* Minor bug fixes
+* Weekly report GUI interface update
+* Flexible weekly report creation date range added
+
+Version: V5R1
+-------------
+* Minor bug fixes
+* Added a serch criteria with "All BSC" category

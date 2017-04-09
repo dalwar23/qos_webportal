@@ -1,0 +1,105 @@
+/*
+	Author: Md Dalwar Hossain Arif;
+	Date: 22-May-2013;
+*/
+@font-face {
+	font-family: 'Lucida-Grande';
+	src: url('../fonts/Lucida-Grande.ttf') format('truetype'),
+  		 url('../fonts/Lucida-Grande-Web.woff') format('truetype'); /* Modern Browsers */
+}
+@font-face{
+	font-family: 'Lucida-Grande';
+	font-weight: bold;
+	src: url('../fonts/Lucida-Grande-Bold.ttf') format('truetype'); /* Modern Browsers */
+}
+html{
+	border: 0;
+	padding: 0;
+	font-family: Lucida-Grande;
+}
+body{
+	font-family: Lucida-Grande;
+}
+.content{
+
+}
+.content table{
+
+	font-size: 12px;
+	font-weight: normal;
+}
+.content select, input{
+	font-size: 12px;
+	font-weight: normal;
+	padding: 3px;
+	background-color: #FEF4AD;
+	color: #000;
+}
+.content .report{
+	padding-top:10%;
+}
+.content .report h1{
+	text-align:center;
+	font-weight:bold;
+	font-size:100%;
+}
+.content .report table{
+	border-collapse: collapse;
+}
+.content .report table td{
+	padding:3px;	
+}
+.content .report .processPanel{
+	text-align:center;
+	padding: 25px 0;
+}
+.content .dataView table{
+	border-collapse: collapse;
+}
+.content .dataView table td{
+	padding: 3px;
+}
+.content .dataView p{
+	text-align:center;
+	font-weight: bold;
+	padding:20px 0;
+	text-decoration:underline;
+}
+.content .dataView .commonView{
+	overflow:scroll;
+}
+.content .dataView .commonView table{
+	font-size:10px;
+	font-weight:normal;
+}
+.content .report .errorMsg{
+	text-align:center;
+	color:RED;
+}
+.tblheader{
+	text-align: center;
+	font-weight: bold;
+	background-color: #F47920;
+}
+.tblRowColor{
+	text-align: center;
+	font-weight: normal;
+	background-color: #FEF4AD;
+}
+.tblRowColorMono{
+	text-align: center;
+	font-weight: normal;
+}
+.button{
+	padding: 5px;
+	background-color: #414141;
+	color:#FFFFFF;
+	text-align: center;
+}
+.pdata{
+	text-align: center;
+}
+.export{
+	text-align: center;
+	padding: 20px 0;
+}

@@ -1,0 +1,344 @@
+/**
+ * @name: KPI Integration Tool
+ * @author: Md.Dalwar Hossain Arif (www.arif23.com)
+ * @access: QoS, Technical Programs and Network Quality
+ * @copyright: Arif
+ * @license: N/A
+ * @uses: PHP/MYSQL/HTML5/CSS3
+ * @since: 09-September-2013
+ */
+
+/* --- Start of CSS Reset --- */
+@font-face {
+	font-family: 'Lucida-Grande';
+	src: url('../fonts/Lucida-Grande.ttf') format('truetype'),
+  		 url('../fonts/Lucida-Grande-Web.woff') format('truetype'); /* Modern Browsers */
+}
+@font-face{
+	font-family: 'Lucida-Grande';
+	font-weight: bold;
+	src: url('../fonts/Lucida-Grande-Bold.ttf') format('truetype'); /* Modern Browsers */
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    margin:0;
+    padding:0;
+    font-family: Lucida-Grande;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+    font-family: Lucida-Grande;
+}
+fieldset,img { 
+    border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-style:normal;
+    font-weight:normal;
+}
+ol,ul {
+    list-style:none;
+}
+caption,th {
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { 
+    border:0;
+}
+/*End of CSS Reset*/
+
+/* ---- Start of Main Style Sheet---- */
+body{
+    margin:0;
+    padding:0;
+    background-color: #F58636;
+}
+#main_wrapper{
+    margin:0 auto;
+    width:995px;
+    height:auto;
+}
+#container{
+    margin: 0 auto;
+    width:990px;
+    height: auto;
+}
+/* Start of Header*/
+#header{
+    margin: 0 auto;
+    padding: 0;
+    width: 990px;
+    height: 123px;
+    background-color: #F58636;
+}
+.head{
+    margin: 0 auto;
+    padding: 0;
+    width: 990px;
+    height: 95px;
+}
+.head_left_bg{
+    margin: 0;
+    padding: 0;
+    width: 495px;
+    height: 95px;
+    float: left;
+}
+.head_left_1{
+    margin: 0;
+    padding: 0;
+    height: 95px;
+    width: 5px;
+    float: left;
+    background: #F58636 url(../images/banner_bg_left_5px.gif) no-repeat top;
+}
+.head_left_2{
+    margin: 0;
+    padding: 0;
+    height: 95px;
+    width: 490px;
+    float: left;
+    background: #F58636 url(../images/banner_bg_left.gif) no-repeat top;
+}
+.head_right_bg{
+    margin: 0;
+    padding: 0;
+    width: 495px;
+    height: 95px;
+    float: left;
+    background-color:#F58636; 
+}
+.head_right_1{
+    margin: 0;
+    padding: 0;
+    height: 95px;
+    width: 490px;
+    float: left;
+    background: #F58636 url(../images/banner_bg_right.gif) no-repeat top;
+}
+.head_right_2{
+    margin: 0;
+    padding: 0;
+    height: 95px;
+    width: 5px;
+    float: left;
+    background: #F58636 url(../images/banner_bg_right_5px.gif) no-repeat top;
+}
+.head_left_2 span{
+    float: left;
+}
+.head_right_1 span{
+    float: right;
+}
+.menu_gap{
+    clear: both;
+    height: 1px;
+    width: 990px;
+    background-color: #ffffff;
+}
+.menu{
+    margin: 0;
+    padding: 0;
+    height: 23px;
+    width: 990px;
+    background: #F58636 url(../images/constant_menu_bg.gif) no-repeat top;
+}
+.menu_shade{
+    margin: 0;
+    padding: 0;
+    height: 4px;
+    width: 990px;
+    background: #F58636 url(../images/constant_menu_shade.gif) no-repeat top;
+}
+/*End of Header*/
+
+/*Start of Menu style*/
+ul.menu_item {
+    list-style:none;
+}
+ul.menu_item * {
+    margin:0;
+    padding:0;
+}
+ul.menu_item a {
+    display:block;
+    color:#000000;
+    text-decoration:none;
+}
+ul.menu_item li {
+    position:relative;
+    float:left;
+}
+ul.menu_item ul {
+    position:absolute;
+    top:21px; 
+    left:0; 
+    background:transparent;
+    display:none;
+    opacity:0; 
+    list-style:none;
+    font-weight:normal; 
+    font-size: 10px;
+}
+ul.menu_item ul li {
+    position:relative;
+    border:1px solid #ffffff; 
+    border-bottom:none;
+    width:190px;
+    margin:0;
+}
+ul.menu_item ul li a {
+    display:block;
+    padding:3px 6px 3px;
+    background-color:#F47920;
+}
+ul.menu_item ul li a:hover {
+    background-color:#F44D20;
+    color: #ffffff;
+}
+ul.menu_item ul ul {
+    left:148px;
+    top:-1px;
+}
+ul.menu_item .menulink {
+    border:0px;
+    padding:5px 5px;
+    font-weight:normal;
+    font-size:10px;
+    color: #ffffff;
+}
+ul.menu_item .menulink:hover, ul.menu .menuhover {
+    font-weight:normal;
+    font-size:10px;
+    color: #000000;
+}
+ul.menu_item .menu_break {
+	font-weight:bold;
+	background-color:#FFF;
+}
+ul.menu_item .sub {
+    background:#FFE3D8 url(../images/arrow.gif) 136px 8px no-repeat;
+}
+ul.menu_item .topline {
+    border-top:1px solid #aaa;
+}
+/*End of Menu Style*/
+
+/*Start of Content*/
+#content{
+    margin: 0;
+    padding: 0;
+    min-height: 465px;
+    width: 990px;
+    height:auto;
+    background: #F58636 url(../images/body_bg.jpg) top;
+}
+#content .welcome{
+    text-align: center;
+}
+#content .welcome h1{
+    padding-top:20%;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 110%;
+}
+#content .login{
+	text-align:center;
+	font-size:10pt;
+	padding-top:15%;
+}
+#content .login h1{
+	text-align:center;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:100%;
+}
+#content .login .errorMsg{
+	color:RED;
+}
+#content .login input{
+	font-size:10pt;
+}
+#content .login table{
+	border-collapse: collapse;
+}
+#content .login table td{
+	padding:5px;	
+}
+#content .txtBox{
+    padding: 3px;
+    border: 1px solid #DDDDDD;
+    background-color:#E8F2FE;	
+}
+#content .txtBox:hover{
+	border: 1px solid #336699;
+}
+#content .txtBox:focus{
+	border: 1px solid #336699;
+}
+#content .flatButton{
+	padding: 6px;
+    border: 1px solid #98B5E2;
+    background-color: #CAD9F0;
+    color: #333333;
+    font-weight: normal;
+    cursor: pointer;	
+}
+#content .flatButton:hover{
+	background-color: #98B5E2;
+}
+/*End of Content*/
+
+/*Start of Footer*/
+#footer{
+    margin: 0;
+    padding: 0;
+    height: 25px;
+    width: 990px;
+    background-color:#F58636;
+    font-weight:normal; 
+    font-size:10px;
+}
+.footer_shade{
+    margin: 0;
+    padding: 0;
+    height: 5px;
+    width: 990px;
+    background: #F58636 url(../images/page_footer_shade.gif) no-repeat top;    
+}
+.footer_bg{
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    width: 990px;
+    background: #F58636 url(../images/page_footer_bg_stripe.gif) no-repeat top;   
+}
+.copyright{
+    margin: 0;
+    padding: 2px;
+    float:left;
+}
+.footer_info{
+    margin: 0;
+    padding: 2px;
+    float:right;
+}
+.footer_info a{
+    color:#ffffff;
+    text-decoration:none;
+}
+.footer_info a:hover{
+    color:#000000;
+    font-weight:normal;
+    text-decoration:underline;    
+}
+/*End of Footer*/
+
+/*End of Main Style Sheet*/
